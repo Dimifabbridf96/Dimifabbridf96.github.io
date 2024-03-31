@@ -421,7 +421,6 @@ form > *:hover{
     .courses img:hover{
         box-shadow: 0 0 0 whitesmoke;
         transform: scale(1);
-
     }
     .card{
         grid-template-areas: 
@@ -440,6 +439,8 @@ form > *:hover{
     
     .two-columns:hover > *{
         opacity: 1;
+        box-shadow:0 0 0 rgb(255, 255, 255);
+
     }
     .timetable{
         font-size: .8em;
