@@ -417,7 +417,12 @@ form > *:hover{
         align-self: center;
         justify-self: center;
         margin-bottom: 20px;
-    } 
+    }
+    .courses img:hover{
+        box-shadow: 0 0 0 whitesmoke;
+        transform: scale(1);
+
+    }
     .card{
         grid-template-areas: 
         "img img h3"
@@ -435,6 +440,9 @@ form > *:hover{
     
     .two-columns:hover > *{
         opacity: 1;
+    }
+    .timetable{
+        font-size: .8em;
     }
 }
 
@@ -474,9 +482,9 @@ form > *:hover{
     
 }
 
-@media only screen and (max-width:550px){
+@media only screen and (max-width:591px){
     .timetable{
-        font-size: 12px;
+        font-size: 11px;
     }
     .timetable td, .timetable th{
         padding: 4px 2px;
@@ -535,9 +543,9 @@ form > *:hover{
     }
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:415px){
     .timetable{
-        font-size: 9px;
+        font-size: 8px;
     }
     table{
         font-size: .8em;
@@ -553,8 +561,8 @@ form > *:hover{
         width: 70%;
     }
 }
-@media only screen and (max-width:360px){
+@media only screen and (max-width:350px){
     .timetable{
-        font-size: 8px;
+        font-size: 7px;
     }
 }
