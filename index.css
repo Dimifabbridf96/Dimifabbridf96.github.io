@@ -71,7 +71,7 @@ nav h2{
     line-height: 1.5em;
 }
 
-nav button{
+.btn{
     position: absolute;
     bottom: 15%;
     left: 20%;
@@ -79,12 +79,12 @@ nav button{
     background-color: #808080;
     border-radius: 20px;
     width: 20%;
-    height: 10%;
     text-align: center;
+    padding: 30px;
     color: #FFFFFF;
 }
 
-nav button:hover{
+.btn:hover{
     animation: pulse 1.5s infinite;
 
 }
@@ -168,7 +168,7 @@ footer{
 footer h3{
     font-size: 2rem;
 }
-.social button{
+.social a{
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -267,7 +267,7 @@ col:nth-child(even){
     background-color: #AA0000;
 }
 col:nth-child(odd){
-    background-color: #808080;
+    background-color: #000000;
 }
 
 
@@ -285,7 +285,7 @@ th, td{
 }
 .contact{
     display: grid;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 40% 1fr;
     grid-template-rows: 150px 1fr;
     grid-template-areas:
     "h2 h2 " 
@@ -294,20 +294,23 @@ th, td{
 .contact h2{
     grid-area: h2;
     text-align: center;
-    font-size: 3em;    
+    font-size: 3em;
+    align-self: center;    
 }
 .info{
     margin: 0 auto;
 }
-.info h3{
-    color: #AA0000;
-}
+
 form{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 90%;
     grid-area: form;
+    margin: auto 20px;
+}
+label{
+    display: hidden;
 }
 form > *{
     padding: 20px 10px;
@@ -403,10 +406,10 @@ form > *:hover{
         font-size: 2em;
         bottom: 30%;
     } 
-    nav button{
+    .btn{
         animation: pulse 1.5s infinite;
     }
-    .social button{
+    .social a{
         height: 75px;
         width: 75px;
     }
@@ -449,10 +452,9 @@ form > *:hover{
         font-size: 1.3em;
         bottom: 15%;
     }
-    nav button{
+    .btn{
         bottom: 5%;
         width: 20%;
-        height: 5%;
         font-size: 1em;
     }
     #girl{
@@ -508,6 +510,12 @@ form > *:hover{
         height: 300px ;
         width: 150px;
     }
+    .btn{
+        bottom: 2%;
+        padding: 20px;
+        left: 10%;
+
+    }
     .social{
         gap:5px;
     }
@@ -529,6 +537,24 @@ form > *:hover{
 
 @media only screen and (max-width:400px){
     .timetable{
-        font-size: 7px;
+        font-size: 9px;
+    }
+    table{
+        font-size: .8em;
+    }
+    .contact h3{
+        font-size: 1.5em;
+    }
+    .contact p{
+        font-size: 1em;
+    }
+
+    form{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:360px){
+    .timetable{
+        font-size: 8px;
     }
 }
