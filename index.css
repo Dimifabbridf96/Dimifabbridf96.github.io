@@ -362,9 +362,6 @@ form > *:hover{
     .center{
         font-size: 2.5em;
     }
-    li{
-        padding: 0;
-    }
 }
 
 @media only screen and (max-width:1097px) {
@@ -391,7 +388,14 @@ form > *:hover{
         font-size: 1.2em;
     }
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:830px) {
+        table{
+        font-size: .9em;
+    }
+
+}
+
+@media only screen and (max-width:796px) {
     ul{
        width: 50%;
     }
@@ -417,7 +421,7 @@ form > *:hover{
         "p p p";
     }
     .two-columns{
-        width: 100%;
+        width: 95%;
     }
     .card h3{
         font-size: 1.5em ;
@@ -425,10 +429,18 @@ form > *:hover{
     p{
         font-size: 1.3em;
     }
-    table{
-        font-size: .8em;
+    
+    .two-columns:hover > *{
+        opacity: 1;
     }
 }
+
+@media only screen and (max-width:660px){
+    .timetable{
+        font-size: .7em;
+    }
+}
+
 @media only screen and (max-width:630px) {
     ul{
         width: 30%;
@@ -457,10 +469,22 @@ form > *:hover{
             "img"
             "h3"
             "p";    }
-    .timetable{
-        font-size: .5em;
-    }
     
+}
+
+@media only screen and (max-width:550px){
+    .timetable{
+        font-size: 12px;
+    }
+    .timetable td, .timetable th{
+        padding: 4px 2px;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .timetable{
+        font-size: 10px;
+    }
 }
 @media only screen and (max-width:430px) {
     nav{
@@ -495,10 +519,16 @@ form > *:hover{
         height: 200px;
         width: 200px;
     }
-    .timetable td, .timetable th{
-        padding: 4px 2px;
-    }
     .center{
         font-size: 1.5em;
+    }
+    li{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .timetable{
+        font-size: 7px;
     }
 }
